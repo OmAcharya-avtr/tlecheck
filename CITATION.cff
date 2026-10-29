@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "TleCheck"
+abstract: ""Screen a two-line element set before propagating it and classify each problem as will-fail-loudly, will-propagate-to-a-wrong-answer-silently, or benign. sgp4 parses and propagates a TLE and does both well; it does not say the element set is three weeks stale, that the drag term flipped sign, that two sources disagree by kilometres, or that an element is physically implausible - and those are the inputs that produce a confident wrong ephemeris. Baseline explicit rule screens over checksum and format validity, epoch age against a declared requirement, element bounds from orbital mechanics, and consistency against the object's own element history with an explicit outlier test. Learned screening classifier for the SILENT class, which rules cover worst, scored on recall at fixed false-positive rate against the rule screens AND against a majority-class baseline. The silent classification is verified by ACTUALLY PROPAGATING the corrupted set with sgp4 and measuring resulting position error against the uncorrupted propagation, so the class label is measured consequence rather than assumed.""
+type: software
+authors:
+  - family-names: "Acharya"
+    given-names: "Om"
+    alias: "OmAcharya-avtr"
+repository-code: "https://github.com/OmAcharya-avtr/tlecheck"
+license: "Apache-2.0"
+version: "0.1.0"
+date-released: "2026-08-30"
+keywords:
+  - aerospace
+  - aerospace-gnc
